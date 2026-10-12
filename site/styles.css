@@ -196,8 +196,6 @@ section {scroll-margin-top:100px;padding:52px 0}.head {align-items:baseline;gap:
 .work-row {display:grid;grid-template-columns:200px 1fr;gap:35px;padding:24px 0;border-top:1px solid var(--rule)}
 .work-row h3 {margin:0;font-size:23px}.work-row p {margin:8px 0;color:var(--ink-soft);font-size:14.5px}
 .work-date {font:11px var(--mono);color:var(--ink-faint);line-height:1.8}.work-title {color:var(--accent)}
-.screen {width:100%;display:block;border:1px solid var(--rule);border-radius:4px;margin:25px 0 10px;aspect-ratio:2.04;object-fit:cover;object-position:top}
-.screen-caption {font:11px var(--mono);color:var(--ink-faint);margin:0 0 30px}
 .architecture-study {padding:24px;background:var(--paper-raised);border:1px solid var(--rule);border-radius:4px;margin-bottom:15px}
 .architecture-study-top {flex-wrap:wrap;gap:12px}.architecture-study-top h3 {font-size:20px}.architecture-flow {flex-wrap:wrap}
 .architecture-flow b {color:var(--ink-faint)}.architecture-flow span {white-space:normal}
