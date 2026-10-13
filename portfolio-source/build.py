@@ -2,7 +2,7 @@
 from pathlib import Path
 import re
 from html import escape as e
-from projects import PROJECTS, ARCHIVES, LEARNING, G, K
+from projects import PROJECTS, ARCHIVES, LEARNING, SYSTEMS, G, K
 
 ROOT = Path(__file__).parent
 OUT = ROOT.parent / 'site'
@@ -72,18 +72,13 @@ featured = ''.join(card(PROJECTS[i],n+1) for n,i in enumerate([0,1,2,3,4,8]))
 archive = ''.join(card(p,i+1,True) for i,p in enumerate(PROJECTS))
 learning = ''.join(f'<article class="learning-item"><h3>{i+1:02d}. {e(t)}</h3><p>{e(d)}</p><small>{e(proof)}</small></article>' for i,(t,d,proof) in enumerate(LEARNING))
 repos = ''.join(f'<div><a href="{G+e(n)}">{e(n)} ↗</a><small>{e(d)}</small></div>' for n,d in ARCHIVES)
-systems = [
-('Document inference with release gates','ForgeSight','page upload → durable ledger → isolated runtime → detections → frozen evaluation → release decision','Separate runtime processes keep memory measurements interpretable. Leases and fencing prevent an expired worker from writing stale results. The memory calibration rejected its own linear fit when measured RSS contradicted the assumption.','https://github.com/PiKa919/forgesight'),
-('Evidence before generation','MP-KG-RAG','documents → source hashes → graph retrieval → frozen evidence → five perspectives → cited synthesis','All perspectives analyze the same evidence set. Schema repair, checkpoint identity, and per-row quarantine make failures inspectable. Evidence-ID membership is recorded separately from semantic support.',''),
-('Explain a financial residual','Inventory-to-GL workbench','exports → health gates → normalized balances → evidenced bridges → residual review → evidence packet','Integer minor-unit money and immutable source versions support deterministic reconciliation. Reviewer decisions and audit events persist. The public demonstration uses synthetic data and keeps the ERP boundary read-only.','https://inventory-gl-demo.vercel.app/guide'),
-('Native inference under a device budget','Q-Forge','model blocks → ONNX subgraphs → CPU / NNAPI → reusable buffers → timing and RSS','The Android experiment studies native orchestration and component behavior under memory and thermal constraints. Simulated attention limits what the benchmark can say about full-model generation.','https://github.com/PiKa919/Q-forge'),
-]
+systems = [(item['title'], item['project'], item['flow'], item['description'], item['link']) for item in SYSTEMS]
 system_html=''
 for title,project,flow,desc,link in systems:
     parts=flow.split(' → ')
     system_html+=f'<article class="architecture-study"><div class="architecture-study-top"><h3>{e(title)}</h3><span>{e(project)}</span></div><div class="architecture-flow">'+ '<b aria-hidden="true">→</b>'.join('<span>'+e(x)+'</span>' for x in parts)+f'</div><p>{e(desc)}</p>'+(f'<a class="architecture-link" href="{e(link)}">Read the implementation ↗</a>' if link else '<a class="architecture-link" href="#archive-mp-kg-rag">Read the project summary ↓</a>')+'</article>'
 
-BASE = "/Portfoio"
+BASE = "/Portfolio"
 FONT_LINK = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">'
 PAGE_CSS = '''
 .page-hero {padding:68px 0 42px;border-top:0}.page-hero h1 {font-size:clamp(40px,6vw,66px);line-height:1.08;max-width:850px;letter-spacing:-.03em}.page-hero p {max-width:660px;color:var(--ink-soft);font-size:17px;margin:18px 0 0}

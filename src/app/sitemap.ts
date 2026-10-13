@@ -1,42 +1,44 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ankitdas.dev';
+  const baseUrl = 'https://pika919.github.io/Portfolio';
 
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: '2026-10-13',
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/#about`,
-      lastModified: new Date(),
+      url: `${baseUrl}/about/`,
+      lastModified: '2026-10-13',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#skills`,
-      lastModified: new Date(),
+      url: `${baseUrl}/work/`,
+      lastModified: '2026-10-13',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/#projects`,
-      lastModified: new Date(),
+      url: `${baseUrl}/work/`,
+      lastModified: '2026-10-13',
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/#experience`,
-      lastModified: new Date(),
+      url: `${baseUrl}/about/`,
+      lastModified: '2026-10-13',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
+      url: `${baseUrl}/about/`,
+      lastModified: '2026-10-13',
       changeFrequency: 'yearly',
       priority: 0.6,
     },

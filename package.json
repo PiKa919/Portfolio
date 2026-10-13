@@ -7,10 +7,10 @@
     "email": "ankitdas9810@gmail.com",
     "url": "https://ankitdas.dev"
   },
-  "homepage": "https://ankitdas.dev",
+  "homepage": "https://pika919.github.io/Portfolio/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PiKa919/Portfoio"
+    "url": "https://github.com/PiKa919/Portfolio"
   },
   "license": "MIT",
   "keywords": [
@@ -27,6 +27,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "python3 portfolio-source/export_data.py",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

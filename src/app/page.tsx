@@ -1,119 +1,33 @@
-'use client';
+import Link from "next/link";
+import portfolio from "@/data/portfolio.json";
+import { AnimatedButton } from "@/components/kiviui/animated-button";
+import { SpotlightCard } from "@/components/kiviui/spotlight-card";
+import { ProjectCard } from "@/components/portfolio/ProjectCard";
+import { SiteFooter, SiteNav } from "@/components/portfolio/SiteNav";
 
-import { useState } from 'react';
-import dynamic from 'next/dynamic';
-
-// UI Components
-import Cursor from '@/components/ui/Cursor';
-import NavBar from '@/components/ui/NavBar';
-import Preloader from '@/components/ui/Preloader';
-import ParticleNetwork from '@/components/ui/ParticleNetwork';
-
-// Section Components
-import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
-import Skills from '@/components/sections/Skills';
-import Certifications from '@/components/sections/Certifications';
-
-// Dynamically import heavier sections for code splitting
-const Projects = dynamic(() => import('@/components/sections/Projects'), {
-  loading: () => <SectionSkeleton />,
-  ssr: false,
-});
-
-const Experience = dynamic(() => import('@/components/sections/Experience'), {
-  loading: () => <SectionSkeleton />,
-  ssr: false,
-});
-
-const Contact = dynamic(() => import('@/components/sections/Contact'), {
-  loading: () => <SectionSkeleton />,
-  ssr: false,
-});
-
-// Loading skeleton for lazy-loaded sections
-function SectionSkeleton() {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="w-8 h-8 border-2 border-cyan border-t-transparent rounded-full animate-spin" />
-    </div>
-  );
-}
+const featured = ["ForgeSight", "MP-KG-RAG", "Q-Forge"].map((name) => portfolio.projects.find((project) => project.name === name)!).filter(Boolean);
 
 export default function Home() {
-  // Preloader state
-  const [isLoading, setIsLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
-
-  // No heavy assets to preload currently, but keeping structure for future use
-  // The preloader is primarily for the "terminal init" aesthetic effect
-
-  const handlePreloaderComplete = () => {
-    setIsLoading(false);
-    // Small delay before showing content for smooth transition
-    setTimeout(() => setShowContent(true), 100);
-  };
-
-  return (
-    <>
-      {/* Preloader */}
-      {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
-
-      {/* Custom Cursor (Desktop only) */}
-      <Cursor />
-
-      {/* Global Particle Network Background */}
-      {showContent && (
-        <div className="fixed inset-0 z-0 pointer-events-none">
-          <ParticleNetwork
-            particleCount={60}
-            connectionDistance={120}
-            mouseRepelRadius={80}
-          />
-        </div>
-      )}
-
-      {/* Navigation */}
-      {showContent && <NavBar />}
-
-      {/* Main Content */}
-      <main
-        className={`relative z-10 transition-opacity duration-500 w-full flex flex-col items-center ${showContent ? 'opacity-100' : 'opacity-0'
-          }`}
-      >
-        {/* Hero Section */}
-        <Hero />
-
-        {/* About Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <About />
-        </div>
-
-        {/* Skills Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <Skills />
-        </div>
-
-        {/* Certifications & Achievements Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <Certifications />
-        </div>
-
-        {/* Projects Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <Projects />
-        </div>
-
-        {/* Experience Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <Experience />
-        </div>
-
-        {/* Contact Section */}
-        <div className="mt-16 md:mt-24 w-full">
-          <Contact />
-        </div>
-      </main>
-    </>
-  );
+  return <><SiteNav active="home"/><main className="page-shell home-shell">
+    <section className="hero section-pad">
+      <p className="eyebrow">AI · COMPUTER VISION · SYSTEMS</p>
+      <h1>I build AI systems<br/><em>you can inspect.</em></h1>
+      <p className="hero-copy">I’m Ankit Das, an engineer working across computer vision, document AI, retrieval, and efficient inference. I turn model ideas into testable software with clear evidence and limits.</p>
+      <div className="hero-actions"><AnimatedButton text="Explore selected work" hoverText="See what I build ↗" href="/Portfolio/work/"/><Link className="text-link" href="/about/">A little about me ↓</Link></div>
+      <div className="hero-meta"><span>Based in India</span><span>Open to AI engineering & applied systems roles</span><a href="mailto:ankitdas9810@gmail.com">ankitdas9810@gmail.com ↗</a></div>
+    </section>
+    <section className="capabilities section-pad" aria-labelledby="capabilities-title">
+      <div className="section-heading"><p className="eyebrow">WHAT I BRING</p><h2 id="capabilities-title">From model behavior<br/>to dependable software.</h2></div>
+      <div className="capability-grid">
+        <SpotlightCard className="capability-card"><span className="number">01</span><h3>Computer vision & document AI</h3><p>OCR, layout understanding, detection, and evaluation for real-world inputs.</p></SpotlightCard>
+        <SpotlightCard className="capability-card"><span className="number">02</span><h3>Applied AI systems</h3><p>Inference services, durable workflows, model comparison, and human review.</p></SpotlightCard>
+        <SpotlightCard className="capability-card"><span className="number">03</span><h3>Efficient inference</h3><p>ONNX, native runtimes, device constraints, and measurements with stated limits.</p></SpotlightCard>
+      </div>
+    </section>
+    <section className="selected section-pad" aria-labelledby="selected-title">
+      <div className="section-heading row-heading"><div><p className="eyebrow">A FEW EXAMPLES</p><h2 id="selected-title">Selected work</h2></div><Link className="text-link" href="/work/">Browse all work ↗</Link></div>
+      <div className="work-grid featured-grid">{featured.map((project) => <ProjectCard key={project.name} project={project} featured/>)}</div>
+    </section>
+    <section className="closing section-pad"><p className="eyebrow">THE SHORT VERSION</p><p className="closing-copy">I like hard engineering problems, honest evaluation, and building the glue that makes AI useful.</p><Link className="text-link" href="/about/">Read about my experience and approach ↗</Link></section>
+  </main><SiteFooter/></>;
 }

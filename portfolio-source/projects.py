@@ -44,7 +44,7 @@ ARCHIVES = [
 ('BlackCoffer-Text-Analysis---NLP-Assignment','NLP assignment'),('Data-Science-Projects','Data-science practice'),
 ('ML','Machine-learning practice'),('LLMs','Language-model experiments'),('Pythonmania','Python practice'),
 ('C','C practice'),('C-Starters','C learning exercises'),('Project1-Music-_Website','Early music website'),
-('Web-exp','Web experiments'),('Portfoio','Repository for this GitHub Pages portfolio and the earlier Next.js portfolio source'),('Processor_graphs','Processor visualization archive'),
+('Web-exp','Web experiments'),('Portfolio','Repository for this GitHub Pages portfolio'),('Processor_graphs','Processor visualization archive'),
 ('skill-bar','Web UI experiment'),('Congitia-25','Historical project archive'),('ProNew','Historical project archive'),
 ('PiKa919','GitHub profile repository'),('resume','Resume workbench'),
 ]
@@ -59,4 +59,35 @@ LEARNING = [
 ('Recommendations and applied ML','Collaborative filtering, content similarity, ranking, competition iteration, and separation of synthetic from real data.','MusicAlgo · Kaggle experiments'),
 ('Languages and platforms','Python, TypeScript, JavaScript, C++, C#, Rust, SQL, Bash, Android, Linux, and macOS; additional exposure to Go, Julia, Swift, and SwiftUI.','Projects and learning practice, with depth varying by language'),
 ('Cloud and deployment','Docker packaging, API deployment, Firebase, and personal-project use of EC2, S3, and Python Lambda.','Project work; hobby Kubernetes exposure, separate from professional operations'),
+]
+
+SYSTEMS = [
+    {
+        "title": "Document inference with release gates",
+        "project": "ForgeSight",
+        "flow": "page upload → durable ledger → isolated runtime → detections → frozen evaluation → release decision",
+        "description": "Separate runtime processes keep memory measurements interpretable. Leases and fencing prevent an expired worker from writing stale results. The memory calibration rejected its own linear fit when measured RSS contradicted the assumption.",
+        "link": G + "forgesight",
+    },
+    {
+        "title": "Evidence before generation",
+        "project": "MP-KG-RAG",
+        "flow": "documents → source hashes → graph retrieval → frozen evidence → five perspectives → cited synthesis",
+        "description": "All perspectives analyze the same evidence set. Schema repair, checkpoint identity, and per-row quarantine make failures inspectable. Evidence-ID membership is recorded separately from semantic support.",
+        "link": "",
+    },
+    {
+        "title": "Explain a financial residual",
+        "project": "Inventory-to-GL workbench",
+        "flow": "exports → health gates → normalized balances → evidenced bridges → residual review → evidence packet",
+        "description": "Integer minor-unit money and immutable source versions support deterministic reconciliation. Reviewer decisions and audit events persist. The public demonstration uses synthetic data and keeps the ERP boundary read-only.",
+        "link": "https://inventory-gl-demo.vercel.app/guide",
+    },
+    {
+        "title": "Native inference under a device budget",
+        "project": "Q-Forge",
+        "flow": "model blocks → ONNX subgraphs → CPU / NNAPI → reusable buffers → timing and RSS",
+        "description": "The Android experiment studies native orchestration and component behavior under memory and thermal constraints. Simulated attention limits what the benchmark can say about full-model generation.",
+        "link": G + "Q-forge",
+    },
 ]
