@@ -28,6 +28,6 @@ export default function Home() {
       <div className="section-heading row-heading"><div><p className="eyebrow">A FEW EXAMPLES</p><h2 id="selected-title">Selected work</h2></div><Link className="text-link" href="/work/">Browse all work ↗</Link></div>
       <div className="work-grid featured-grid">{featured.map((project) => <ProjectCard key={project.name} project={project} featured/>)}</div>
     </section>
-    <section className="closing section-pad"><p className="eyebrow">THE SHORT VERSION</p><p className="closing-copy">My projects are a snapshot of what I build. My technical notes follow what I’m learning next.</p><Link className="text-link" href="/about/">Experience, research & ongoing study ↗</Link><a className="text-link closing-writing" href="https://x.com/ankitdasamd">Technical writing on X ↗</a></section>
+    <section className="closing section-pad"><p className="eyebrow">THE SHORT VERSION</p><p className="closing-copy">My projects are a snapshot of what I build. My technical notes follow what I’m learning next.</p><Link className="text-link" href="/about/">Experience, research & ongoing study ↗</Link><a className="text-link closing-writing" href="https://x.com/ankitdasdev">Technical writing on X ↗</a></section>
   </main><SiteFooter/></>;
 }
