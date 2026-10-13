@@ -8,7 +8,7 @@ export const metadata = { title: "Work", description: "Selected AI engineering s
 
 export default function WorkPage() {
   return <><SiteNav active="work"/><main className="page-shell detail-shell">
-    <section className="page-intro section-pad"><p className="eyebrow">WORK / SELECTED SYSTEMS + ARCHIVE</p><h1>Useful systems.<br/><em>Honest evidence.</em></h1><p className="hero-copy">A few projects show how I approach engineering. The archive is here when you want to go deeper.</p></section>
+    <section className="page-intro section-pad"><p className="eyebrow">WORK / SELECTED SYSTEMS + ARCHIVE</p><h1>Useful systems.<br/><em>Honest evidence.</em></h1><p className="hero-copy">Explore full-stack development, AI, computer vision and ML, geospatial experiments, and systems engineering.</p><a className="text-link" href="#archive">Jump to project categories ↓</a></section>
     <section className="systems-section section-pad"><div className="section-heading"><p className="eyebrow">SYSTEM NOTES</p><h2>How the pieces fit.</h2></div>
       {portfolio.systems.map((system, index) => <article className="system-row" key={system.project}><div className="system-index">0{index + 1}</div><div><h3>{system.title}</h3><p>{system.description}</p><p className="system-flow">{system.flow}</p><Link className="text-link" href={system.link || `/work/#archive-${system.project.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`}>{system.project} details ↗</Link></div></article>)}
     </section>

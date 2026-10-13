@@ -1,11 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type portfolio from "@/data/portfolio.json";
+import portfolio from "@/data/portfolio.json";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
 
 type Project = (typeof portfolio.projects)[number];
-const categories = ["All", "Vision", "Retrieval", "Systems", "Software", "Learning", "Contributions"] as const;
+const categories = ["All", ...portfolio.projectCategories];
 type Category = (typeof categories)[number];
 
 type ProjectArchiveProps = { projects: Project[] };
@@ -16,8 +16,8 @@ export function ProjectArchive({ projects }: ProjectArchiveProps) {
   const filtered = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase();
     return projects.filter((project) => {
-      const matchesCategory = category === "All" || project.category === category;
-      const matchesQuery = !normalized || (project.name + " " + project.category + " " + project.status + " " + project.description + " " + project.stack.join(" ")).toLocaleLowerCase().includes(normalized);
+      const matchesCategory = category === "All" || project.categories.includes(category);
+      const matchesQuery = !normalized || (project.name + " " + project.categories.join(" ") + " " + project.status + " " + project.description + " " + project.stack.join(" ")).toLocaleLowerCase().includes(normalized);
       return matchesCategory && matchesQuery;
     });
   }, [category, projects, query]);

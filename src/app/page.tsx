@@ -5,16 +5,16 @@ import { SpotlightCard } from "@/components/kiviui/spotlight-card";
 import { ProjectCard } from "@/components/portfolio/ProjectCard";
 import { SiteFooter, SiteNav } from "@/components/portfolio/SiteNav";
 
-const featured = ["ForgeSight", "MP-KG-RAG", "Q-Forge"].map((name) => portfolio.projects.find((project) => project.name === name)!).filter(Boolean);
+const featured = ["ForgeSight", "MP-KG-RAG", "Pratishtha / SAKECFEST"].map((name) => portfolio.projects.find((project) => project.name === name)!).filter(Boolean);
 
 export default function Home() {
   return <><SiteNav active="home"/><main className="page-shell home-shell">
     <section className="hero section-pad">
       <p className="eyebrow">AI · COMPUTER VISION · SYSTEMS</p>
       <h1>I build AI systems<br/><em>you can inspect.</em></h1>
-      <p className="hero-copy">I’m Ankit Das, an engineer working across computer vision, document AI, retrieval, and efficient inference. I turn model ideas into testable software with clear evidence and limits.</p>
+      <p className="hero-copy">I’m Ankit Das. I build applied AI and software systems, with experience in computer vision, document intelligence, retrieval, and full-stack development. I’m also studying the architectures behind the models.</p>
       <div className="hero-actions"><AnimatedButton text="Explore selected work" hoverText="See what I build ↗" href="/Portfolio/work/"/><Link className="text-link" href="/about/">A little about me ↓</Link></div>
-      <div className="hero-meta"><span>Based in India</span><span>Open to AI engineering & applied systems roles</span><a href="mailto:ankitdas9810@gmail.com">ankitdas9810@gmail.com ↗</a></div>
+      <div className="hero-meta"><span>Based in India</span><span>Freelancing with Kraxys Works</span><a href="mailto:ankitdas9810@gmail.com">ankitdas9810@gmail.com ↗</a></div>
     </section>
     <section className="capabilities section-pad" aria-labelledby="capabilities-title">
       <div className="section-heading"><p className="eyebrow">WHAT I BRING</p><h2 id="capabilities-title">From model behavior<br/>to dependable software.</h2></div>
@@ -28,6 +28,6 @@ export default function Home() {
       <div className="section-heading row-heading"><div><p className="eyebrow">A FEW EXAMPLES</p><h2 id="selected-title">Selected work</h2></div><Link className="text-link" href="/work/">Browse all work ↗</Link></div>
       <div className="work-grid featured-grid">{featured.map((project) => <ProjectCard key={project.name} project={project} featured/>)}</div>
     </section>
-    <section className="closing section-pad"><p className="eyebrow">THE SHORT VERSION</p><p className="closing-copy">I like hard engineering problems, honest evaluation, and building the glue that makes AI useful.</p><Link className="text-link" href="/about/">Read about my experience and approach ↗</Link></section>
+    <section className="closing section-pad"><p className="eyebrow">THE SHORT VERSION</p><p className="closing-copy">My projects are a snapshot of what I build. My technical notes follow what I’m learning next.</p><Link className="text-link" href="/about/">Experience, research & ongoing study ↗</Link><a className="text-link closing-writing" href="https://x.com/ankitdasamd">Technical writing on X ↗</a></section>
   </main><SiteFooter/></>;
 }

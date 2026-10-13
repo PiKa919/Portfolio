@@ -22,7 +22,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <span>© 2026 Ankit Das</span>
-        <div><Link href="/work/">Work</Link><Link href="/about/">About</Link><a href="https://github.com/PiKa919/">GitHub ↗</a></div>
+        <div><Link href="/work/">Work</Link><Link href="/about/">About</Link><a href="https://github.com/PiKa919/">GitHub ↗</a><a href="https://x.com/ankitdasamd">X ↗</a></div>
       </div>
     </footer>
   );

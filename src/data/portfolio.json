@@ -3,6 +3,10 @@
     {
       "name": "ForgeSight",
       "category": "Vision",
+      "categories": [
+        "CV & ML",
+        "Systems & inference"
+      ],
       "status": "Implemented workbench",
       "description": "Document-layout inference with separate PyTorch and ONNX Runtime workers, a durable job ledger, candidate comparisons, and release gates.",
       "stack": [
@@ -12,11 +16,15 @@
         "PostgreSQL"
       ],
       "url": "https://github.com/PiKa919/forgesight",
-      "scope": "Quality comparisons use generated pages. Performance measurements belong to the recorded host and protocol."
+      "scope": "Quality comparisons use generated pages. Performance measurements belong to the recorded host and protocol.",
+      "demoUrl": ""
     },
     {
       "name": "MP-KG-RAG",
       "category": "Retrieval",
+      "categories": [
+        "AI & agents"
+      ],
       "status": "Research prototype",
       "description": "A multi-perspective knowledge-graph retrieval pipeline with hash-bound sources, frozen evidence, schema repair, multilingual evaluation, and per-row quarantine.",
       "stack": [
@@ -26,11 +34,16 @@
         "BGE-M3"
       ],
       "url": "",
-      "scope": "Four archived variants contain 6,200 final outputs. Evidence-ID membership checks do not establish factual entailment."
+      "scope": "Four archived variants contain 6,200 final outputs. Evidence-ID membership checks do not establish factual entailment.",
+      "demoUrl": ""
     },
     {
       "name": "Q-Forge",
       "category": "Systems",
+      "categories": [
+        "Systems & inference",
+        "AI & agents"
+      ],
       "status": "Research benchmark",
       "description": "Native C++ orchestration and ONNX subgraph execution on an Exynos Android phone, with CPU/NNAPI selection, host-buffer reuse, timing, and RSS telemetry.",
       "stack": [
@@ -40,11 +53,17 @@
         "NNAPI"
       ],
       "url": "https://github.com/PiKa919/Q-forge",
-      "scope": "The attention stage is simulated. This is a component benchmark, not a complete autoregressive decoder."
+      "scope": "The attention stage is simulated. This is a component benchmark, not a complete autoregressive decoder.",
+      "demoUrl": ""
     },
     {
       "name": "TerraServe",
       "category": "Vision",
+      "categories": [
+        "Geospatial",
+        "CV & ML",
+        "Full-stack & web"
+      ],
       "status": "Take-home prototype",
       "description": "Three versioned land-use classifiers behind separate API and inference services, with content-addressed images, persisted predictions, retries, and a review interface.",
       "stack": [
@@ -54,11 +73,15 @@
         "Streamlit"
       ],
       "url": "https://github.com/PiKa919/galaxeye-ml-systems-take-home",
-      "scope": "TerraServe names the existing GalaxEye take-home. Fixed-set classification results do not establish geographic generalization."
+      "scope": "TerraServe names the existing GalaxEye take-home. Fixed-set classification results do not establish geographic generalization.",
+      "demoUrl": ""
     },
     {
       "name": "ApplySignal",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Product prototype",
       "description": "Candidate-side hiring intelligence with posting history, application-flow observations, source confidence, freshness signals, quarantine, and recovery workflows.",
       "stack": [
@@ -68,11 +91,16 @@
         "Docker"
       ],
       "url": "https://github.com/PiKa919/ApplySignal",
-      "scope": "Hosted and local snapshots demonstrate a prototype. Source freshness and availability vary."
+      "scope": "Hosted and local snapshots demonstrate a prototype. Source freshness and availability vary.",
+      "demoUrl": ""
     },
     {
       "name": "UnScroll",
       "category": "Retrieval",
+      "categories": [
+        "AI & agents",
+        "Full-stack & web"
+      ],
       "status": "Product prototype",
       "description": "An application and CLI for turning visual carousel content into structured knowledge artifacts, with replaceable VLM providers, bounded concurrency, validation, and media manifests.",
       "stack": [
@@ -82,11 +110,16 @@
         "Zod"
       ],
       "url": "https://github.com/PiKa919/unscroll",
-      "scope": "Local contract tests are separate from live provider and Instagram verification. Some resolver paths remain incomplete."
+      "scope": "Local contract tests are separate from live provider and Instagram verification. Some resolver paths remain incomplete.",
+      "demoUrl": ""
     },
     {
       "name": "PaddleOCR Studio",
       "category": "Vision",
+      "categories": [
+        "CV & ML",
+        "Full-stack & web"
+      ],
       "status": "Integration tool",
       "description": "A document-processing UI around upstream OCR and vision-language models, with batch inputs, model management, structured exports, and container packaging.",
       "stack": [
@@ -95,11 +128,16 @@
         "Docker"
       ],
       "url": "https://github.com/PiKa919/paddle-ui",
-      "scope": "My work is the UI and integration layer. PaddleOCR and its models belong to their upstream authors."
+      "scope": "My work is the UI and integration layer. PaddleOCR and its models belong to their upstream authors.",
+      "demoUrl": ""
     },
     {
       "name": "AiRA",
       "category": "Software",
+      "categories": [
+        "Full-stack & web",
+        "AI & agents"
+      ],
       "status": "Interactive prototype",
       "description": "A workout console with a deterministic session model, editable routines, timers, set logging, and optional Gemini Live voice tools.",
       "stack": [
@@ -108,11 +146,15 @@
         "OpenUI"
       ],
       "url": "",
-      "scope": "Sessions are simulated. Anatomical images are illustrations. This is not a validated fitness or medical service."
+      "scope": "Sessions are simulated. Anatomical images are illustrations. This is not a validated fitness or medical service.",
+      "demoUrl": ""
     },
     {
       "name": "Inventory-to-GL workbench",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Hosted synthetic demo",
       "description": "An export-first reconciliation system with immutable close packages, deterministic balances, residual investigation, reviewer decisions, and downloadable evidence.",
       "stack": [
@@ -122,11 +164,15 @@
         "Supabase"
       ],
       "url": "https://inventory-gl-demo.vercel.app/guide",
-      "scope": "A synthetic pre-sales hypothesis, not Tractable client work. It does not write journals or adjust inventory."
+      "scope": "A synthetic pre-sales hypothesis, not Tractable client work. It does not write journals or adjust inventory.",
+      "demoUrl": ""
     },
     {
       "name": "Urdu OCR",
       "category": "Vision",
+      "categories": [
+        "CV & ML"
+      ],
       "status": "Research experiments",
       "description": "Multilingual text recognition and extraction experiments using PaddleOCR, TrOCR, Tesseract, and language-aware evaluation.",
       "stack": [
@@ -135,11 +181,16 @@
         "TrOCR"
       ],
       "url": "https://github.com/PiKa919/urduOCR_PaddleOCR",
-      "scope": "Research and notebook evidence, without a universal accuracy or deployment claim."
+      "scope": "Research and notebook evidence, without a universal accuracy or deployment claim.",
+      "demoUrl": ""
     },
     {
       "name": "MusicAlgo",
       "category": "Software",
+      "categories": [
+        "CV & ML",
+        "Software"
+      ],
       "status": "Engineering project",
       "description": "A C# recommendation engine with Python evaluation tooling, local-library ingestion, collaborative and content-based ranking, and a Jellyfin plugin scaffold.",
       "stack": [
@@ -149,11 +200,15 @@
         "Jellyfin"
       ],
       "url": "https://github.com/PiKa919/music-algo",
-      "scope": "Some advanced paths are scaffolds. Synthetic events and fallback random embeddings do not demonstrate real-user recommendation lift."
+      "scope": "Some advanced paths are scaffolds. Synthetic events and fallback random embeddings do not demonstrate real-user recommendation lift.",
+      "demoUrl": ""
     },
     {
       "name": "APU Matrix",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Data product",
       "description": "A browser dashboard comparing accelerator specifications, benchmark data, and price/performance, with normalized data and interactive tables.",
       "stack": [
@@ -163,11 +218,16 @@
         "Vitest"
       ],
       "url": "https://github.com/PiKa919/APU-Matrix",
-      "scope": "Benchmark coverage varies by device and metric. Historical snapshot counts are not current coverage guarantees."
+      "scope": "Benchmark coverage varies by device and metric. Historical snapshot counts are not current coverage guarantees.",
+      "demoUrl": ""
     },
     {
       "name": "JobPulse",
       "category": "Systems",
+      "categories": [
+        "Systems & inference",
+        "Software"
+      ],
       "status": "Local workflow tool",
       "description": "A Rust job-monitoring daemon with source adapters, SQLite deduplication, keyword filtering, browser fallback, and macOS notifications.",
       "stack": [
@@ -177,11 +237,16 @@
         "LaunchAgent"
       ],
       "url": "",
-      "scope": "A local automation tool. Third-party source adapters can change or become unavailable."
+      "scope": "A local automation tool. Third-party source adapters can change or become unavailable.",
+      "demoUrl": ""
     },
     {
       "name": "Legal research engine",
       "category": "Retrieval",
+      "categories": [
+        "AI & agents",
+        "Full-stack & web"
+      ],
       "status": "Research prototype",
       "description": "Legal-document retrieval with local model inference, citations, a citation graph, and an interface for inspecting evidence.",
       "stack": [
@@ -191,11 +256,15 @@
         "Plotly"
       ],
       "url": "https://github.com/PiKa919/Research-Engine-For-Courts",
-      "scope": "A research system, without a legal-correctness or court-deployment claim."
+      "scope": "A research system, without a legal-correctness or court-deployment claim.",
+      "demoUrl": ""
     },
     {
       "name": "Pune Metro video analytics",
       "category": "Vision",
+      "categories": [
+        "CV & ML"
+      ],
       "status": "Research project",
       "description": "Detection, tracking, regions of interest, and threshold-based video event analysis to turn frame-level observations into counts and alerts.",
       "stack": [
@@ -205,11 +274,16 @@
         "SORT"
       ],
       "url": "https://github.com/PiKa919/Pune-Metro-Video-Analytics",
-      "scope": "Exploratory event analysis. No operational station deployment is claimed."
+      "scope": "Exploratory event analysis. No operational station deployment is claimed.",
+      "demoUrl": ""
     },
     {
       "name": "SAR image translation",
       "category": "Vision",
+      "categories": [
+        "Geospatial",
+        "CV & ML"
+      ],
       "status": "Research implementation",
       "description": "SAR colorization and image translation experiments using CycleGAN-style domain conditioning and lightweight model variants.",
       "stack": [
@@ -218,11 +292,16 @@
         "AdaIN"
       ],
       "url": "https://github.com/PiKa919/SAR-Image-using-GANs",
-      "scope": "Repository architecture is evidence of implementation. Projected quality and efficiency claims are not verified benchmarks."
+      "scope": "Repository architecture is evidence of implementation. Projected quality and efficiency claims are not verified benchmarks.",
+      "demoUrl": ""
     },
     {
       "name": "SpeechMedia",
       "category": "Software",
+      "categories": [
+        "AI & agents",
+        "Full-stack & web"
+      ],
       "status": "Batch-media prototype",
       "description": "A Streamlit workflow for audio extraction, speech transcription, text-to-speech replacement, and downloadable video, text, and audio artifacts.",
       "stack": [
@@ -231,11 +310,15 @@
         "Google Cloud"
       ],
       "url": "https://github.com/PiKa919/Video-Transcription-and-Audio-Replacement-App",
-      "scope": "A batch workflow, not a realtime telephony or low-latency voice system."
+      "scope": "A batch workflow, not a realtime telephony or low-latency voice system.",
+      "demoUrl": ""
     },
     {
       "name": "Cattle-nose localization",
       "category": "Vision",
+      "categories": [
+        "CV & ML"
+      ],
       "status": "Archived training run",
       "description": "YOLO11l training for nose localization with a successful ONNX export in the archived Kaggle notebook.",
       "stack": [
@@ -244,11 +327,16 @@
         "Kaggle"
       ],
       "url": "https://www.kaggle.com/pikaaa",
-      "scope": "The saved validation set has 76 images and 86 instances. Localization is separate from animal identification; current notebook execution has errors."
+      "scope": "The saved validation set has 76 images and 86 instances. Localization is separate from animal identification; current notebook execution has errors.",
+      "demoUrl": ""
     },
     {
       "name": "Amazon ML Challenge",
       "category": "Learning",
+      "categories": [
+        "CV & ML",
+        "Learning"
+      ],
       "status": "Candidate-reported project",
       "description": "Product-image modeling with personally reported XL YOLO training on a few thousand images and an EC2 deployment.",
       "stack": [
@@ -257,11 +345,16 @@
         "EC2"
       ],
       "url": "https://www.kaggle.com/pikaaa",
-      "scope": "Model version, split, errors, serving scale, and challenge rank need supporting artifacts."
+      "scope": "Model version, split, errors, serving scale, and challenge rank need supporting artifacts.",
+      "demoUrl": ""
     },
     {
       "name": "Offline image and OCR data tooling",
       "category": "Vision",
+      "categories": [
+        "CV & ML",
+        "AI & agents"
+      ],
       "status": "Local research tooling",
       "description": "Apple-Silicon image generation and synthetic document scripts with configurable text, layout variation, scanner noise, and metadata.",
       "stack": [
@@ -270,11 +363,15 @@
         "Python"
       ],
       "url": "",
-      "scope": "Generated labels need review. This is local experimentation rather than a released dataset or benchmark."
+      "scope": "Generated labels need review. This is local experimentation rather than a released dataset or benchmark.",
+      "demoUrl": ""
     },
     {
       "name": "Statement analyzer",
       "category": "Software",
+      "categories": [
+        "Software"
+      ],
       "status": "Personal utility",
       "description": "A local PDF-to-workbook workflow for statement extraction, categories, recurring payments, merchant trends, and charts.",
       "stack": [
@@ -284,11 +381,15 @@
         "Excel"
       ],
       "url": "",
-      "scope": "Only the tool description is public. Personal financial data and generated workbooks remain private."
+      "scope": "Only the tool description is public. Personal financial data and generated workbooks remain private.",
+      "demoUrl": ""
     },
     {
       "name": "Instagram saved organizer",
       "category": "Software",
+      "categories": [
+        "Software"
+      ],
       "status": "Personal prototype",
       "description": "Collection synchronization and searchable saved-item indexing with SQLite FTS, cursor guards, and rule-based tags.",
       "stack": [
@@ -297,11 +398,15 @@
         "FTS"
       ],
       "url": "",
-      "scope": "Uses an unofficial API with account, rate-limit, and compatibility constraints."
+      "scope": "Uses an unofficial API with account, rate-limit, and compatibility constraints.",
+      "demoUrl": ""
     },
     {
       "name": "Pratishtha / SAKECFEST",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Campus website",
       "description": "An event website with registration, schedules, and Firebase-backed updates.",
       "stack": [
@@ -311,33 +416,45 @@
         "Firebase"
       ],
       "url": "https://github.com/PiKa919/prathistha1",
-      "scope": "Campus web engineering, kept separate from professional AI employment."
+      "scope": "Campus web engineering, kept separate from professional AI employment.",
+      "demoUrl": "https://pratishtha-web.vercel.app"
     },
     {
       "name": "Hackathon Tracker",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Web project",
       "description": "Hackathon discovery and tracking with calendar and event-detail workflows.",
       "stack": [
         "Web application"
       ],
       "url": "https://github.com/PiKa919/Hackathon-Tracker",
-      "scope": "Historical project evidence, without a current service-availability claim."
+      "scope": "Historical project evidence, without a current service-availability claim.",
+      "demoUrl": ""
     },
     {
       "name": "E-PhysicsApp",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Educational project",
       "description": "An educational application with formulas, derivations, solved problems, and quizzes.",
       "stack": [
         "Educational software"
       ],
       "url": "https://github.com/PiKa919/E-PhysicsApp",
-      "scope": "An educational project, without a measured learning-outcome claim."
+      "scope": "An educational project, without a measured learning-outcome claim.",
+      "demoUrl": ""
     },
     {
       "name": "URL shortener",
       "category": "Software",
+      "categories": [
+        "Full-stack & web"
+      ],
       "status": "Backend project",
       "description": "A service for generating short codes and resolving stored destination URLs.",
       "stack": [
@@ -346,11 +463,16 @@
         "SQLAlchemy"
       ],
       "url": "https://github.com/PiKa919/url_shortner",
-      "scope": "A backend learning project, without a high-traffic deployment claim."
+      "scope": "A backend learning project, without a high-traffic deployment claim.",
+      "demoUrl": ""
     },
     {
       "name": "Budget Tracker",
       "category": "Software",
+      "categories": [
+        "Full-stack & web",
+        "Learning"
+      ],
       "status": "Learning project",
       "description": "A Streamlit application for exploring personal budgeting workflows.",
       "stack": [
@@ -358,11 +480,17 @@
         "Streamlit"
       ],
       "url": "https://github.com/PiKa919/Budget-Tracker",
-      "scope": "A learning application. No financial-advice validation is claimed."
+      "scope": "A learning application. No financial-advice validation is claimed.",
+      "demoUrl": ""
     },
     {
       "name": "ROGII geosteering",
       "category": "Learning",
+      "categories": [
+        "Geospatial",
+        "CV & ML",
+        "Learning"
+      ],
       "status": "Competition study",
       "description": "Wellbore geology prediction experiments and a study of trajectory projection, grouping, and evaluation leakage.",
       "stack": [
@@ -371,11 +499,16 @@
         "GroupKFold"
       ],
       "url": "https://www.kaggle.com/pikaaa",
-      "scope": "My saved version 7 score is separate from Pilkwang Kim's reference notebook. The reference score is not my result."
+      "scope": "My saved version 7 score is separate from Pilkwang Kim's reference notebook. The reference score is not my result.",
+      "demoUrl": ""
     },
     {
       "name": "Kaggle experiment collection",
       "category": "Learning",
+      "categories": [
+        "CV & ML",
+        "Learning"
+      ],
       "status": "Competition and notebook work",
       "description": "Experiments across rainfall, hardness, obesity risk, RNA, CryoET, speech recognition, remote sensing, and marine-life detection.",
       "stack": [
@@ -384,11 +517,16 @@
         "Kaggle"
       ],
       "url": "https://www.kaggle.com/pikaaa",
-      "scope": "Eight completed competitions in the October 4 audit. Notebook titles and private drafts do not establish completed training or original publication."
+      "scope": "Eight completed competitions in the October 4 audit. Notebook titles and private drafts do not establish completed training or original publication.",
+      "demoUrl": ""
     },
     {
       "name": "openGym setup work",
       "category": "Contributions",
+      "categories": [
+        "Full-stack & web",
+        "Contributions"
+      ],
       "status": "Contribution",
       "description": "Local setup design, start/stop scripts, proxy configuration, and fallback backend-port work on an existing application.",
       "stack": [
@@ -398,11 +536,16 @@
         "Docker"
       ],
       "url": "",
-      "scope": "Contributor to setup workflows. The upstream application and AI coach are not my original work."
+      "scope": "Contributor to setup workflows. The upstream application and AI coach are not my original work.",
+      "demoUrl": ""
     },
     {
       "name": "ai-job-search customization",
       "category": "Contributions",
+      "categories": [
+        "AI & agents",
+        "Contributions"
+      ],
       "status": "Customization",
       "description": "Adapted an existing framework for research, ranking, application drafts, interview preparation, and outcome tracking.",
       "stack": [
@@ -410,11 +553,16 @@
         "Automation"
       ],
       "url": "",
-      "scope": "Configuration and integration work, with upstream framework authorship preserved."
+      "scope": "Configuration and integration work, with upstream framework authorship preserved.",
+      "demoUrl": ""
     },
     {
       "name": "Go practice",
       "category": "Learning",
+      "categories": [
+        "Software",
+        "Learning"
+      ],
       "status": "Learning track",
       "description": "Practice with functions, interfaces, error handling, goroutines, channels, generics, pointers, and structs, alongside Python equivalents.",
       "stack": [
@@ -422,7 +570,26 @@
         "Python"
       ],
       "url": "",
-      "scope": "Learning-track evidence. Broader Go development is user-reported without a public implementation example here."
+      "scope": "Learning-track evidence. Broader Go development is user-reported without a public implementation example here.",
+      "demoUrl": ""
+    },
+    {
+      "name": "Quantum optimization chapter",
+      "category": "Learning",
+      "categories": [
+        "Quantum computing"
+      ],
+      "status": "Co-authored chapter · forthcoming",
+      "description": "Co-authored Chapter 6, Quantum Optimization Algorithms and Application, in Quantum Computing Unleashed. Covers quantum annealing, QAOA, VQE, Grover's search, and hybrid quantum-classical optimization.",
+      "stack": [
+        "Quantum optimization",
+        "QAOA",
+        "VQE",
+        "Annealing"
+      ],
+      "url": "https://share.google/Yjj9pRl8LS9v2qEBX",
+      "scope": "Authorship is confirmed in the publisher proof. Algorithm discussion is research and exposition, not a claim of hardware speedup or production quantum deployment.",
+      "demoUrl": ""
     }
   ],
   "archives": [
@@ -628,5 +795,16 @@
       "description": "The Android experiment studies native orchestration and component behavior under memory and thermal constraints. Simulated attention limits what the benchmark can say about full-model generation.",
       "link": "https://github.com/PiKa919/Q-forge"
     }
+  ],
+  "projectCategories": [
+    "Full-stack & web",
+    "AI & agents",
+    "CV & ML",
+    "Geospatial",
+    "Systems & inference",
+    "Quantum computing",
+    "Software",
+    "Learning",
+    "Contributions"
   ]
 }

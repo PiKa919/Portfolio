@@ -8,37 +8,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
       url: `${baseUrl}/about/`,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/work/`,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/work/`,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/about/`,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/about/`,
-      lastModified: '2026-10-13',
+      lastModified: '2026-10-14',
       changeFrequency: 'yearly',
       priority: 0.6,
     },
