@@ -8,7 +8,7 @@
         "Systems & inference"
       ],
       "status": "Implemented workbench",
-      "description": "Document-layout inference with separate PyTorch and ONNX Runtime workers, a durable job ledger, candidate comparisons, and release gates.",
+      "description": "Document-layout inference with separate PyTorch and ONNX Runtime workers, a durable job ledger, candidate comparisons, and release gates. ONNX Runtime measured 1.47x the throughput of PyTorch on an Apple M5 CPU.",
       "stack": [
         "Python",
         "FastAPI",
@@ -45,7 +45,7 @@
         "AI & agents"
       ],
       "status": "Research benchmark",
-      "description": "Native C++ orchestration and ONNX subgraph execution on an Exynos Android phone, with CPU/NNAPI selection, host-buffer reuse, timing, and RSS telemetry.",
+      "description": "Native C++ orchestration and ONNX subgraph execution on an Exynos Android phone, with CPU/NNAPI selection, host-buffer reuse, timing, and RSS telemetry. Measured 65.97 ms per 24-layer pass and 89.35 MB peak memory on the NPU path.",
       "stack": [
         "C++",
         "Android NDK",
@@ -73,7 +73,7 @@
         "Streamlit"
       ],
       "url": "https://github.com/PiKa919/galaxeye-ml-systems-take-home",
-      "scope": "TerraServe names the existing GalaxEye take-home. Fixed-set classification results do not establish geographic generalization.",
+      "scope": "Built as an ML-systems take-home assignment. Fixed-set classification results do not establish geographic generalization.",
       "demoUrl": ""
     },
     {

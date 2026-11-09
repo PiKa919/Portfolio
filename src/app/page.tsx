@@ -13,8 +13,8 @@ export default function Home() {
       <p className="eyebrow">AI · COMPUTER VISION · SYSTEMS</p>
       <h1>I build AI systems<br/><em>you can inspect.</em></h1>
       <p className="hero-copy">I’m Ankit Das. I build applied AI and software systems, with experience in computer vision, document intelligence, retrieval, and full-stack development. I’m also studying the architectures behind the models.</p>
-      <div className="hero-actions"><AnimatedButton text="Explore selected work" hoverText="See what I build ↗" href="/Portfolio/work/"/><Link className="text-link" href="/about/">A little about me ↓</Link></div>
-      <div className="hero-meta"><span>Based in India</span><span>Freelancing with Kraxys Works</span><a href="mailto:ankitdas9810@gmail.com">ankitdas9810@gmail.com ↗</a></div>
+      <div className="hero-actions"><AnimatedButton text="Explore selected work" hoverText="See what I build ↗" href="/Portfolio/work/"/><a className="text-link" href="/Portfolio/Ankit_Das-Resume.pdf">Download resume (PDF) ↗</a><Link className="text-link" href="/about/">A little about me ↓</Link></div>
+      <div className="hero-meta"><span>Mumbai, India · open to relocating to Bengaluru, Hyderabad or Pune</span><span>Freelancing with Kraxys Works</span><a href="mailto:ankitdasamd@gmail.com">ankitdasamd@gmail.com ↗</a><a href="https://www.linkedin.com/in/ankitdas919">LinkedIn ↗</a></div>
     </section>
     <section className="capabilities section-pad" aria-labelledby="capabilities-title">
       <div className="section-heading"><p className="eyebrow">WHAT I BRING</p><h2 id="capabilities-title">From model behavior<br/>to dependable software.</h2></div>

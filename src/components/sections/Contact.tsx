@@ -59,7 +59,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    url: 'mailto:ankitdas9810@gmail.com',
+    url: 'mailto:ankitdasamd@gmail.com',
     status: 'Always Open',
     icon: (
       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
